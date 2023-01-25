@@ -1,0 +1,27 @@
+<h1> Exercice 2 : Composants Angulaires Et Modules #5</h1>
+<h3>The juice list</h3>
+<div>
+    <label for="">Enter juice</label><br><br>
+    <input type="text" #add><br><br>
+    <button type="button" (click)="(add)">Add product</button><br><br>
+</div>
+
+
+<main class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of containtProductListArray">
+                <td>{{i.name}}</td>
+                <td>{{i.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+  
+</main>
+    
